@@ -14,18 +14,6 @@
         font-weight: 700;
     }
 </style>
-<script>
-    const myName = "Jake";
-
-    console.log(myName)
-
-    // alert("welcome to jake site")
-
-    document.querySelector("html").addEventListener("click", function() {
-        alert("Ouch, you clicked me Jake")
-    })
-
-</script>
 <body>
     <p id = "first_ptag" class="my_paragraph">
         Hello, World
@@ -33,5 +21,28 @@
     <p class="my_paragraph">
         Hello, Jake
     </p>
+    <button id="button">
+        Click jake
+    </button>
+    <p id="counter">Clicked me 0 times</p>
 </body>
+
+<script>
+    let count = 0
+
+    const counter = document.getElementById("counter")
+
+    const myName = "Jake";
+
+    console.log(myName)
+
+    function buttonClicked() {
+        console.log("Clicked by jake")
+        count++
+        counter.innerText = "Clicked me " + count + " times!"
+    }
+
+    const button = document.getElementById("button")
+    button.addEventListener("click", buttonClicked)
+</script>
 </html>
