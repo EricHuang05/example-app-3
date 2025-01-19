@@ -4,16 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Site</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    .my_paragraph {
-        color: red;
-        font-size: x-large;
-    }
-    p {
-        font-weight: 700;
-    }
-</style>
 <body>
     <p id = "first_ptag" class="my_paragraph">
         Hello, World
@@ -27,22 +19,7 @@
     <p id="counter">Clicked me 0 times</p>
 </body>
 
-<script>
-    let count = 0
+<script src="index.js">
 
-    const counter = document.getElementById("counter")
-
-    const myName = "Jake";
-
-    console.log(myName)
-
-    function buttonClicked() {
-        console.log("Clicked by jake")
-        count++
-        counter.innerText = "Clicked me " + count + " times!"
-    }
-
-    const button = document.getElementById("button")
-    button.addEventListener("click", buttonClicked)
 </script>
 </html>
